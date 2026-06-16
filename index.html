@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Rejoins le Défi 7 Jours THL — Apprends le marketing digital et lance ton business en ligne avec ton téléphone."/>
+<title>Défi 7 Jours Gratuit — THL · Thelio</title>
+<inlink href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Bricolage+Grotesque:wght@700;800&display=swap" rel="stylesheet"/>
+  <style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bleu:#1A4FFF;--violet:#7C3AED;--blanc:#FFFFFF;
+  --fond:#F6F7FF;--bord:#E4E7FF;--gris:#6B7280;--noir:#0A0A14;
+  --grad:linear-gradient(135deg,#1A4FFF 0%,#7C3AED 100%);
+}
+html{scroll-behavior:smooth}
+body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--blanc);color:var(--noir);line-height:1.65;font-size:16px}
+nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--bord);padding:.9rem 1.5rem;display:flex;justify-content:space-between;align-items:center;}
+.nav-logo{font-family:'Bricolage Grotesque',sans-serif;font-size:1.3rem;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;text-decoration:none;}
+.nav-cta{background:var(--grad);color:#fff;font-weight:700;font-size:.82rem;padding:.55rem 1.3rem;border-radius:999px;text-decoration:none;box-shadow:0 4px 14px rgba(26,79,255,.3);}
+.hero{background:var(--noir);padding:5rem 1.5rem 4rem;text-align:center;position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 0%,rgba(124,58,237,.55),transparent);pointer-events:none;}
+.badge{display:inline-flex;align-items:center;gap:.4rem;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.15);color:rgba(255,255,255,.85);font-size:.75rem;font-weight:700;letter-spacing:1px;padding:.35rem 1rem;border-radius:999px;margin-bottom:1.5rem;}
+.hero h1{font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(2rem,5.5vw,3.5rem);color:#fff;line-height:1.12;margin-bottom:1.25rem;}
+.hero h1 em{font-style:normal;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.hero-sub{font-size:1.05rem;color:rgba(255,255,255,.65);max-width:520px;margin:0 auto 2.5rem;line-height:1.7;}
+.hero-stats{display:flex;justify-content:center;gap:2rem;flex-wrap:wrap;margin-top:2.5rem;}
+.hero-stat{text-align:center}
+.hero-stat strong{display:block;font-family:'Bricolage Grotesque',sans-serif;font-size:1.6rem;color:#fff;}
+.hero-stat span{font-size:.75rem;color:rgba(255,255,255,.45)}
+.capture-main{background:var(--grad);padding:4rem 1.5rem;text-align:center;}
+.capture-main h2{font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(1.6rem,3.5vw,2.2rem);color:#fff;margin-bottom:1rem;}
+.capture-main p{color:rgba(255,255,255,.8);margin-bottom:2rem;max-width:480px;margin-left:auto;margin-right:auto}
+.form-wrap{max-width:480px;margin:0 auto}
+.form-group{display:flex;flex-direction:column;gap:.75rem}
+.form-input{width:100%;padding:1rem 1.3rem;border:2px solid rgba(255,255,255,.25);border-radius:12px;background:rgba(255,255,255,.15);color:#fff;font-size:1rem;font-family:'Plus Jakarta Sans',sans-serif;outline:none;}
+.form-input::placeholder{color:rgba(255,255,255,.55)}
+.form-btn{width:100%;padding:1.1rem;background:#fff;color:var(--bleu);font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1.05rem;border:none;border-radius:12px;cursor:pointer;}
+.form-note{font-size:.75rem;color:rgba(255,255,255,.55);margin-top:.75rem}
+.form-bonus{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);border-radius:10px;padding:1rem;margin-top:1rem;font-size:.85rem;color:rgba(255,255,255,.85);text-align:left;}
+.form-bonus strong{color:#fff;display:block;margin-bottom:.4rem}
+.programme{padding:4rem 1.5rem;background:var(--fond)}
+.section-label{font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--bleu);background:rgba(26,79,255,.1);padding:.3rem .9rem;border-radius:999px;display:inline-block;margin-bottom:1rem;}
+.section-title{font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(1.6rem,3.5vw,2.2rem);margin-bottom:.75rem;}
+.section-sub{color:var(--gris);margin-bottom:2rem;max-width:520px}
+.jours-grid{display:flex;flex-direction:column;gap:.75rem}
+.jour-item{background:#fff;border:1px solid var(--bord);border-radius:14px;padding:1.25rem 1.5rem;display:flex;gap:1rem;align-items:flex-start;}
+.jour-num{flex-shrink:0;width:40px;height:40px;background:var(--grad);color:#fff;font-family:'Bricolage Grotesque',sans-serif;font-size:1rem;border-radius:10px;display:flex;align-items:center;justify-content:center;}
+.jour-content h3{font-size:.95rem;color:var(--noir);margin-bottom:.25rem}
+.jour-content p{font-size:.83rem;color:var(--gris);margin:0}
+.jour-action{font-size:.75rem;font-weight:700;color:var(--violet);margin-top:.4rem;}
+.produits{padding:4rem 1.5rem;background:var(--noir)}
+.produits .section-title{color:#fff}
+.produits .section-sub{color:rgba(255,255,255,.5)}
+.produits-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.25rem;margin-top:2rem;}
+.produit-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:2rem 1.5rem;display:flex;flex-direction:column;position:relative;}
+.produit-card.featured{border-color:rgba(26,79,255,.5);background:rgba(26,79,255,.08)}
+.produit-tag{position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--grad);color:#fff;font-size:.68rem;font-weight:700;padding:.25rem 1rem;border-radius:999px;white-space:nowrap;}
+.produit-badge{font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;padding:.25rem .75rem;border-radius:999px;display:inline-block;width:fit-content;margin-bottom:1rem;}
+.badge-free{background:rgba(22,163,74,.15);color:#4ADE80}
+.badge-starter{background:rgba(26,79,255,.2);color:#93C5FD}
+.badge-pro{background:rgba(124,58,237,.2);color:#C4B5FD}
+.badge-premium{background:rgba(245,158,11,.15);color:#FCD34D}
+.produit-card h3{font-family:'Bricolage Grotesque',sans-serif;font-size:1.05rem;color:#fff;margin-bottom:.5rem;}
+.produit-card p{font-size:.85rem;color:rgba(255,255,255,.5);flex:1;margin-bottom:1rem}
+.produit-features{list-style:none;margin-bottom:1.25rem}
+.produit-features li{font-size:.8rem;color:rgba(255,255,255,.6);padding:.25rem 0;display:flex;align-items:center;gap:.5rem;border-bottom:1px solid rgba(255,255,255,.06);}
+.produit-features li::before{content:'✓';color:#4ADE80;font-weight:700}
+.produit-prix{font-family:'Bricolage Grotesque',sans-serif;font-size:1.6rem;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:1rem;}
+.produit-prix span{font-size:.8rem;color:rgba(255,255,255,.3);font-weight:400;-webkit-text-fill-color:rgba(255,255,255,.3)}
+.btn-produit{display:block;text-align:center;padding:.85rem;border-radius:10px;font-weight:700;font-size:.9rem;text-decoration:none;}
+.btn-grad{background:var(--grad);color:#fff}
+.btn-outline{background:transparent;border:1.5px solid rgba(255,255,255,.2);color:#fff}
+.temoignages{padding:4rem 1.5rem;background:var(--fond)}
+.temo-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.25rem;margin-top:2rem;}
+.temo-card{background:#fff;border:1px solid var(--bord);border-radius:14px;padding:1.75rem;position:relative;}
+.stars{color:#F59E0B;font-size:.85rem;margin-bottom:.75rem}
+.temo-texte{font-size:.88rem;color:var(--noir);line-height:1.7;margin-bottom:1.25rem;font-style:italic}
+.temo-auteur{display:flex;align-items:center;gap:.75rem}
+.temo-avatar{width:38px;height:38px;border-radius:50%;background:var(--grad);color:#fff;font-weight:700;font-size:.9rem;display:flex;align-items:center;justify-content:center;}
+.temo-info strong{display:block;font-size:.85rem;color:var(--noir)}
+.temo-info span{font-size:.75rem;color:var(--gris)}
+.faq{padding:4rem 1.5rem}
+.faq-list{display:flex;flex-direction:column;gap:.75rem;margin-top:2rem;max-width:680px}
+.faq-item{background:var(--fond);border:1px solid var(--bord);border-radius:12px;overflow:hidden;}
+.faq-q{padding:1.1rem 1.25rem;font-weight:700;font-size:.92rem;cursor:pointer;display:flex;justify-content:space-between;align-items:center;color:var(--noir);}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease,padding .3s;font-size:.88rem;color:var(--gris);padding:0 1.25rem;line-height:1.7;}
+.faq-item.open .faq-a{max-height:200px;padding:0 1.25rem 1.1rem}
+.cta-final{background:var(--grad);padding:5rem 1.5rem;text-align:center;}
+.cta-final h2{font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(1.7rem,3.5vw,2.5rem);color:#fff;margin-bottom:1rem;}
+.cta-final p{color:rgba(255,255,255,.8);margin-bottom:2.5rem;}
+footer{background:var(--noir);padding:3rem 1.5rem 2rem;text-align:center;}
+footer .nav-logo{font-size:1.5rem;display:block;margin-bottom:1rem}
+footer p{font-size:.8rem;color:rgba(255,255,255,.35);margin-bottom:.4rem}
+.footer-links{display:flex;justify-content:center;gap:1.5rem;flex-wrap:wrap;margin:1rem 0}
+.footer-links a{font-size:.8rem;color:rgba(255,255,255,.4);text-decoration:none}
+.success-msg{display:none;background:rgba(22,163,74,.15);border:1.5px solid #4ADE80;border-radius:12px;padding:1.25rem;text-align:center;margin-top:1rem;}
+.success-msg.show{display:block}
+.success-msg p{color:#4ADE80;font-weight:600;font-size:.9rem;margin:0}
+</style>
+  </head>
+  <body>
+<nav>
+  <a href="#" class="nav-logo">THL · Thelio</a>
+  <a href="#inscription" class="nav-cta">Rejoindre Gratuitement →</a>
+</nav>
+
+<section class="hero">
+  <div style="position:relative;z-index:1;max-width:700px;margin:0 auto">
+    <div class="badge">🌍 Afrique Francophone · 100% Gratuit</div>
+    <h1>Lance ton business en ligne avec <em>ton téléphone</em> en 7 jours</h1>
+    <p class="hero-sub">Un défi gratuit. Une leçon par jour. Une action concrète. Résultat : un système complet qui génère des revenus — même sans expérience.</p>
+    <a href="#inscription" style="display:inline-block;background:var(--grad);color:#fff;font-weight:800;font-size:1.05rem;padding:1rem 2.5rem;border-radius:999px;text-decoration:none;box-shadow:0 6px 24px rgba(26,79,255,.4)">🚀 Rejoindre le Défi Gratuit</a>
+    <div class="hero-stats">
+      <div class="hero-stat"><strong>7</strong><span>Jours de contenu</span></div>
+      <div class="hero-stat"><strong>0 FCFA</strong><span>Pour commencer</span></div>
+      <div class="hero-stat"><strong>📱</strong><span>100% téléphone</span></div>
+      <div class="hero-stat"><strong>🌍</strong><span>Afrique francophone</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="capture-main" id="inscription">
+  <div class="form-wrap">
+    <div class="badge" style="margin-bottom:1.25rem">📧 Inscription gratuite</div>
+    <h2>Rejoins le Défi 7 Jours maintenant</h2>
+    <p>Entre ton email et reçois la première leçon immédiatement.</p>
+    <div class="form-group">
+      <input type="text" class="form-input" id="prenom" placeholder="Ton prénom..."/>
+      <input type="email" class="form-input" id="email" placeholder="Ton adresse email..."/>
+      <button class="form-btn" onclick="inscrire()">🚀 Je rejoins le Défi Gratuit →</button>
+    </div>
+    <div class="success-msg" id="success">
+      <p>✅ Inscription confirmée ! Vérifie ta boîte email dans 2 minutes.</p>
+    </div>
+    <p class="form-note">✅ Gratuit · Pas de spam · Désinscription en 1 clic</p>
+    <div class="form-bonus">
+      <strong>🎁 Bonus immédiat :</strong>
+      Le Guide Gratuit "Le Plan de Démarrage" offert à l'inscription.
+    </div>
+  </div>
+  </section>
+  <section class="programme">
+  <div style="max-width:680px;margin:0 auto">
+    <div class="section-label">Programme</div>
+    <h2 class="section-title">Ce que tu vas apprendre en 7 jours</h2>
+    <p class="section-sub">Chaque matin, une leçon courte + une action concrète.</p>
+    <div class="jours-grid">
+      <div class="jour-item">
+        <div class="jour-num">1</div>
+        <div class="jour-content">
+          <h3>🧠 Le Bon Mindset</h3>
+          <p>Pourquoi la majorité échoue avant même de commencer.</p>
+          <div class="jour-action">✅ Action : Écrire ta direction unique</div>
+        </div>
+      </div>
+      <div class="jour-item">
+        <div class="jour-num">2</div>
+        <div class="jour-content">
+          <h3>🎯 Choisir ta Niche</h3>
+          <p>La méthode en 3 questions pour trouver un sujet rentable.</p>
+          <div class="jour-action">✅ Action : Valider ta niche en 10 minutes</div>
+        </div>
+      </div>
+      <div class="jour-item">
+        <div class="jour-num">3</div>
+        <div class="jour-content">
+          <h3>💡 Créer ton Offre</h3>
+          <p>Construire un produit simple que les gens veulent acheter.</p>
+          <div class="jour-action">✅ Action : Définir ton offre en 1 phrase</div>
+        </div>
+      </div>
+      <div class="jour-item">
+        <div class="jour-num">4</div>
+        <div class="jour-content">
+          <h3>📌 Trafic Pinterest</h3>
+          <p>Attirer des visiteurs qualifiés gratuitement — sans abonnés.</p>
+          <div class="jour-action">✅ Action : Publier ta première épingle</div>
+        </div>
+      </div>
+      <div class="jour-item">
+        <div class="jour-num">5</div>
+        <div class="jour-content">
+          <h3>✍️ Contenu qui Convertit</h3>
+          <p>La différence entre les likes et les ventes.</p>
+          <div class="jour-action">✅ Action : Créer 3 épingles haute conversion</div>
+        </div>
+      </div>
+      <div class="jour-item">
+        <div class="jour-num">6</div>
+        <div class="jour-content">
+          <h3>📧 Email + Tunnel</h3>
+          <p>Ton système automatisé qui vend pendant que tu dors.</p>
+          <div class="jour-action">✅ Action : Activer ton tunnel email</div>
+        </div>
+      </div>
+      <div class="jour-item">
+        <div class="jour-num">7</div>
+        <div class="jour-content">
+          <h3>💰 Monétiser</h3>
+          <p>Encaisser tes premiers FCFA en ligne aujourd'hui.</p>
+          <div class="jour-action">✅ Action : Envoyer ton premier email de vente</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
